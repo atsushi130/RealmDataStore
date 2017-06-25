@@ -17,22 +17,21 @@ struct RealmDataStore {
     
     private init() {}
     
-    func add<T: RealmModel>(_ object: T, handler: Handler = nil) {
-        
-        defer {
-            handler?()
-        }
-        
-        guard let old = self.getObjects(class: T.self).filter("id=%@", object.id).first else {
-            Realm.addObject(object)
-            return
-        }
-        
-        Realm.deleteObject(old)
-        Realm.addObject(object)
+    func add<T: RealmEntity>(_ object: T, handler: Handler = nil) {
+        self.update(object, handler: handler)
     }
     
-    private func getObjects<T: RealmModel>(class: T.Type) -> Results<T> {
+    func update<T: RealmEntity>(_ object: T, handler: Handler = nil) {
+        Realm.updateObject(object)
+        handler?()
+    }
+    
+    func delete<T: RealmEntity>(_ object: T, handler: Handler = nil) {
+        Realm.deleteObject(object)
+        handler?()
+    }
+    
+    func getObjects<T: RealmEntity>(class: T.Type) -> Results<T> {
         return Realm.objects(`class`)
     }
 }
