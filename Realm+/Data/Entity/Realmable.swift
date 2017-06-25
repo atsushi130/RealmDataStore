@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol RealmModelable {
+protocol Realmable {
    var id: String { get set }
 }
