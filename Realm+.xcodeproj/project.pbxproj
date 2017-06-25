@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75C117601EFF6D4200C7E353 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C1175F1EFF6D4200C7E353 /* User.swift */; };
+		75C117621EFF6D6200C7E353 /* UserEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C117611EFF6D6200C7E353 /* UserEntity.swift */; };
+		75C117641EFF709300C7E353 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C117631EFF709300C7E353 /* Company.swift */; };
+		75C117661EFF70E700C7E353 /* CompanyEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C117651EFF70E700C7E353 /* CompanyEntity.swift */; };
+		75C117841EFF7E7800C7E353 /* PrimaryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C117831EFF7E7800C7E353 /* PrimaryEntity.swift */; };
 		75F13FAF1EFEC0E000AD0443 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13FAE1EFEC0E000AD0443 /* AppDelegate.swift */; };
 		75F13FB11EFEC0E000AD0443 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13FB01EFEC0E000AD0443 /* ViewController.swift */; };
 		75F13FB41EFEC0E000AD0443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F13FB21EFEC0E000AD0443 /* Main.storyboard */; };
@@ -20,7 +25,7 @@
 		75F13FE81EFEC92400AD0443 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F13FE71EFEC92400AD0443 /* RealmSwift.framework */; };
 		75F13FEA1EFEC93B00AD0443 /* RealmSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75F13FE71EFEC92400AD0443 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		75F13FEB1EFEC93B00AD0443 /* Realm.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 75F13FE51EFEC91E00AD0443 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		75F13FED1EFEC98600AD0443 /* RealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13FEC1EFEC98600AD0443 /* RealmModel.swift */; };
+		75F13FED1EFEC98600AD0443 /* RealmEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13FEC1EFEC98600AD0443 /* RealmEntity.swift */; };
 		75F13FF01EFECA2200AD0443 /* Realm+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F13FEF1EFECA2200AD0443 /* Realm+.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +61,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		75C1175F1EFF6D4200C7E353 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = Domain/Model/User.swift; sourceTree = "<group>"; };
+		75C117611EFF6D6200C7E353 /* UserEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserEntity.swift; path = Data/Entity/UserEntity.swift; sourceTree = "<group>"; };
+		75C117631EFF709300C7E353 /* Company.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Company.swift; path = Domain/Model/Company.swift; sourceTree = "<group>"; };
+		75C117651EFF70E700C7E353 /* CompanyEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CompanyEntity.swift; path = Data/Entity/CompanyEntity.swift; sourceTree = "<group>"; };
+		75C117831EFF7E7800C7E353 /* PrimaryEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PrimaryEntity.swift; path = Data/Entity/PrimaryEntity.swift; sourceTree = "<group>"; };
 		75F13FAB1EFEC0E000AD0443 /* Realm+.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Realm+.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F13FAE1EFEC0E000AD0443 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F13FB01EFEC0E000AD0443 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,7 +83,7 @@
 		75F13FE11EFEC16900AD0443 /* Realmable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Realmable.swift; path = Data/Entity/Realmable.swift; sourceTree = "<group>"; };
 		75F13FE51EFEC91E00AD0443 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		75F13FE71EFEC92400AD0443 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
-		75F13FEC1EFEC98600AD0443 /* RealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmModel.swift; path = Data/Entity/RealmModel.swift; sourceTree = "<group>"; };
+		75F13FEC1EFEC98600AD0443 /* RealmEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RealmEntity.swift; path = Data/Entity/RealmEntity.swift; sourceTree = "<group>"; };
 		75F13FEF1EFECA2200AD0443 /* Realm+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Realm+.swift"; path = "Extension/Realm+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,6 +114,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75C1175D1EFF6D1100C7E353 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				75C1175E1EFF6D1A00C7E353 /* Model */,
+			);
+			name = Domain;
+			sourceTree = "<group>";
+		};
+		75C1175E1EFF6D1A00C7E353 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75C1175F1EFF6D4200C7E353 /* User.swift */,
+				75C117631EFF709300C7E353 /* Company.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		75F13FA21EFEC0E000AD0443 = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +155,7 @@
 		75F13FAD1EFEC0E000AD0443 /* Realm+ */ = {
 			isa = PBXGroup;
 			children = (
+				75C1175D1EFF6D1100C7E353 /* Domain */,
 				75F13FEE1EFECA1100AD0443 /* Extension */,
 				75F13FDD1EFEC12500AD0443 /* Data */,
 				75F13FAE1EFEC0E000AD0443 /* AppDelegate.swift */,
@@ -179,7 +207,10 @@
 			isa = PBXGroup;
 			children = (
 				75F13FE11EFEC16900AD0443 /* Realmable.swift */,
-				75F13FEC1EFEC98600AD0443 /* RealmModel.swift */,
+				75F13FEC1EFEC98600AD0443 /* RealmEntity.swift */,
+				75C117611EFF6D6200C7E353 /* UserEntity.swift */,
+				75C117651EFF70E700C7E353 /* CompanyEntity.swift */,
+				75C117831EFF7E7800C7E353 /* PrimaryEntity.swift */,
 			);
 			name = Entity;
 			sourceTree = "<group>";
@@ -341,10 +372,15 @@
 			files = (
 				75F13FB11EFEC0E000AD0443 /* ViewController.swift in Sources */,
 				75F13FAF1EFEC0E000AD0443 /* AppDelegate.swift in Sources */,
+				75C117641EFF709300C7E353 /* Company.swift in Sources */,
 				75F13FDF1EFEC14B00AD0443 /* RealmDataStore.swift in Sources */,
-				75F13FED1EFEC98600AD0443 /* RealmModel.swift in Sources */,
+				75C117841EFF7E7800C7E353 /* PrimaryEntity.swift in Sources */,
+				75C117661EFF70E700C7E353 /* CompanyEntity.swift in Sources */,
+				75F13FED1EFEC98600AD0443 /* RealmEntity.swift in Sources */,
 				75F13FE21EFEC16900AD0443 /* Realmable.swift in Sources */,
 				75F13FF01EFECA2200AD0443 /* Realm+.swift in Sources */,
+				75C117601EFF6D4200C7E353 /* User.swift in Sources */,
+				75C117621EFF6D6200C7E353 /* UserEntity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -603,6 +639,7 @@
 				75F13FD51EFEC0E000AD0443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75F13FD61EFEC0E000AD0443 /* Build configuration list for PBXNativeTarget "Realm+Tests" */ = {
 			isa = XCConfigurationList;
@@ -611,6 +648,7 @@
 				75F13FD81EFEC0E000AD0443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75F13FD91EFEC0E000AD0443 /* Build configuration list for PBXNativeTarget "Realm+UITests" */ = {
 			isa = XCConfigurationList;
@@ -619,6 +657,7 @@
 				75F13FDB1EFEC0E000AD0443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
