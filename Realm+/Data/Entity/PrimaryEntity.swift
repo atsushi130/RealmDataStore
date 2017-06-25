@@ -1,5 +1,5 @@
 //
-//  PrimaryModel.swift
+//  PrimaryEntity.swift
 //  Realm+
 //
 //  Created by Atsushi Miyake on 2017/06/25.
@@ -10,7 +10,7 @@ import Foundation
 import RealmSwift
 import Realm
 
-class PrimaryEntity: Object, RealmModelable {
+class PrimaryEntity: Object, Realmable {
     
     dynamic var id = ""
     
