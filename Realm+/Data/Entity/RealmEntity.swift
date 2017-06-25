@@ -10,12 +10,11 @@ import Foundation
 import RealmSwift
 import Realm
 
-class RealmModel: Object, RealmModelable {
-    dynamic var id = ""
+class RealmEntity: PrimaryEntity {
     
     init(id: String) {
-        self.id = id
         super.init()
+        self.id = id
     }
     
     required init() {
