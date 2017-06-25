@@ -1,5 +1,5 @@
 //
-//  RealmModel.swift
+//  RealmEntity.swift
 //  Realm+
 //
 //  Created by Atsushi Miyake on 2017/06/25.
