@@ -1,20 +1,20 @@
 # RealmDataStore
 
 ### Usage
-RealmModel is conformed to RealmModelable. Please define the class with RealmModel as super class.
+RealmEntity is conformed to Realmable. Please define the class with RealmEntity as super class.
 ```swift
-struct SampleModel: RealmModel {
+struct SampleEntity: RealmEntity {
     ...
 }
 ```
 
 Additional
 ```swift
-RealmDataStore.shared.add(samleModel)
+RealmDataStore.shared.add(samleEntity)
 ```
 or
 ```swift
-RealmDataStore.shared.add(samleModel) {
+RealmDataStore.shared.add(samleEntity) {
     print("added.")
 }
 ```
